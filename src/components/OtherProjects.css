@@ -1,0 +1,55 @@
+.custom-modal .modal-dialog {
+    margin-top: 1vh; /* Shifts the modal down slightly */
+    transition: margin-top 0.3s ease;
+  }
+  
+  .custom-modal .modal-content {
+    border-radius: 15px; /* Rounded corners for a more modern look */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    overflow: hidden;
+    background-color: inherit; /* Inherits dark or light mode background */
+    color: inherit; /* Inherits dark or light mode text color */
+  }
+  
+  .custom-modal.modal-dark .modal-content {
+    background-color: #222; /* Dark background for dark mode */
+    color: #f1f1f1; /* Light text for dark mode */
+  }
+  
+  .custom-modal.modal-light .modal-content {
+    background-color: #f8f9fa; /* Light background for light mode */
+    color: #333; /* Dark text for light mode */
+  }
+  
+  .custom-modal .modal-header,
+  .custom-modal .modal-footer {
+    border: none; /* Removes border for a cleaner look */
+  }
+  
+  .custom-modal .modal-body {
+    max-height: 60vh; /* Limits modal height for scrollable content */
+    overflow-y: auto; /* Enables scrolling for content */
+    padding: 20px;
+  }
+  
+  .modal-body img {
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 15px;
+  }
+  
+  .carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for better text readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-modal .modal-dialog {
+      margin-top: 10vh; /* Adjusts modal margin for smaller screens */
+    }
+  
+    .custom-modal .modal-content {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  

@@ -1,0 +1,95 @@
+/* Navbar.css */
+
+/* Contenedor de la presentación */
+.presentation-container {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background: transparent; /* Fondo transparente */
+}
+
+/* Marco rectangular animado */
+.loading-frame {
+  position: relative;
+  padding: 20px;
+  border: 5px solid transparent;
+  background: transparent; /* El fondo interno también es transparente */
+  border-image: linear-gradient(90deg, #007bff, #00bfff, #00ffbf, #ff00bf) 1;
+  border-radius: 10px;
+  animation: animateBorder 4s linear infinite;
+}
+
+/* Efecto de cargando para el borde */
+@keyframes animateBorder {
+  0% {
+    border-image-source: linear-gradient(90deg, #007bff, #00bfff, #00ffbf, #ff00bf);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, #ff00bf, #00ffbf, #00bfff, #007bff);
+  }
+}
+
+/* Animación de cambio de letra */
+@keyframes textChange {
+  0% {
+    font-family: 'Roboto', sans-serif;
+  }
+  50% {
+    font-family: 'Montserrat', sans-serif;
+  }
+  100% {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.animate-text-change {
+  animation: textChange 5s infinite alternate;
+}
+
+/* Fade-in animation for paragraph */
+.animate-text-fade {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Button hover animation */
+.animate-button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animate-button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+/* Social icons animation */
+.animate-social-icons {
+  animation: bounceIcons 1s infinite alternate;
+}
+
+@keyframes bounceIcons {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Social links hover effect */
+.social-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}

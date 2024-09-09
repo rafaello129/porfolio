@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Fondo animado */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00bfff, #007bff, #00ffbf, #ff00bf);
+    background-size: 200% 200%;
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    animation: gradientMove 10s ease infinite;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Animación del fondo */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Modo oscuro para el fondo animado */
+  .dark-mode .background-animation {
+    background: linear-gradient(135deg, #121212, #343434, #474747, #1a1a1a);
   }
-}
+  
+  /* Estilos generales de la aplicación */
+  .app-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Modos claro y oscuro para el contenido */
+  .light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+  
+  .dark-mode {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  /* Estilo general del contenido */
+  .container {
+    z-index: 1; /* Asegura que el contenido esté encima del fondo animado */
+    position: relative;
+    padding: 20px;
+  }
+  

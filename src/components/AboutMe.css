@@ -1,0 +1,86 @@
+/* AboutMe.css */
+
+/* Fondo oscuro de la tarjeta */
+.bg-dark-card {
+    background-color: #2e2e2e; /* Fondo oscuro */
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Fondo claro de la tarjeta */
+  .bg-light-card {
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #343a40;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Título de la sección */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Tarjeta de información */
+  .about-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagen personalizada */
+  .about-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #f8f9fa;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .about-image:hover {
+    transform: rotate(5deg);
+    border-color: #007bff;
+  }
+  
+  /* Animación de entrada */
+  .animate-card {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Texto de la sección */
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Botón de llamada a la acción */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
