@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/porftolio/static/css/main.88f59fcd.css",
+    "main.js": "/porftolio/static/js/main.5925e0cb.js",
+    "static/js/453.be3bc66b.chunk.js": "/porftolio/static/js/453.be3bc66b.chunk.js",
+    "static/media/filtrar (1).png": "/porftolio/static/media/filtrar (1).bf1db7cc960fb1733c74.png",
+    "static/media/asistencia.png": "/porftolio/static/media/asistencia.daa72e161adf8b16a9f4.png",
+    "static/media/dark.png": "/porftolio/static/media/dark.322ce96ee4b8442e474c.png",
+    "static/media/filtrar.png": "/porftolio/static/media/filtrar.b24083fa37a24e66abf8.png",
+    "static/media/creacion.jpg.png": "/porftolio/static/media/creacion.jpg.7f3e1d9a128a51d123e0.png",
+    "static/media/vista.png": "/porftolio/static/media/vista.ffde184fc3c84b26561a.png",
+    "static/media/logoambar.png": "/porftolio/static/media/logoambar.e9c657f09cdd12004434.png",
+    "static/media/ambar1.png": "/porftolio/static/media/ambar1.457ac08d94add9f9c81f.png",
+    "static/media/crear.png": "/porftolio/static/media/crear.4b7a5e1d2900389027d8.png",
+    "static/media/ambar2.png": "/porftolio/static/media/ambar2.64bc94ff1b19ca32457d.png",
+    "static/media/logoPeesad.png": "/porftolio/static/media/logoPeesad.d27866b702d970e830b8.png",
+    "static/media/tabla.png": "/porftolio/static/media/tabla.fcf43ac5f1c5ce4af3c2.png",
+    "static/media/logorh.png": "/porftolio/static/media/logorh.b5c995e470e9b498c1d3.png",
+    "index.html": "/porftolio/index.html",
+    "main.88f59fcd.css.map": "/porftolio/static/css/main.88f59fcd.css.map",
+    "main.5925e0cb.js.map": "/porftolio/static/js/main.5925e0cb.js.map",
+    "453.be3bc66b.chunk.js.map": "/porftolio/static/js/453.be3bc66b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88f59fcd.css",
+    "static/js/main.5925e0cb.js"
+  ]
+}
